@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 2em;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin: 15px 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            background: #4a90e2;
+            padding: 12px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            transition: background 0.3s, transform 0.3s;
+            font-size: 1em;
+        }
+
+        .nav-links a:hover {
+            background: #357ab8;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .nav-links a {
+                padding: 10px 16px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>导航页</h1>
+        <ul class="nav-links">
+            <li><a href="https://lichensheng.tech" target="_blank">博客</a></li>
+            <li><a href="https://fucksau.us.kg" target="_blank">ChatAPI</a></li>
+            <li><a href="https://fucksau.tech" target="_blank">API-Checker</a></li>
+            <li><a href="http://fofa.lichensheng.us.kg" target="_blank">FOFA</a></li>
+            <li><a href="http://checker.lichensheng.us.kg" target="_blank">Checker</a></li>
+            <li><a href="http://validator.lichensheng.us.kg" target="_blank">Email-Validator</a></li>
+        </ul>
+    </div>
+</body>
+</html>
